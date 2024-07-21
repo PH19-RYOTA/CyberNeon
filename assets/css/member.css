@@ -1,7 +1,7 @@
 body {
     background-color: #1e1e1e;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
     margin: 0;
     padding-top: 56px;
     padding-bottom: 56px;
@@ -23,6 +23,23 @@ header {
     z-index: 1000;
 }
 
+nav a:hover {
+    color: #0dcaf0; /* ホバー時のテキストカラー */
+    text-shadow: 0 0 10px #0dcaf0, 0 0 20px #0dcaf0, 0 0 30px #0dcaf0; /* ホバー時に光るエフェクト */
+}
+
+/* 選択されたナビゲーションリンクのスタイル */
+nav a.active {
+    color: #0dcaf0; /* 選択時のテキストカラー */
+    text-shadow: 0 0 10px #0dcaf0, 0 0 
+}
+
+.neon-text {
+    color: #fff; /* 通常時のテキストカラー */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0dcaf0, 0 0 30px #0dcaf0, 0 0 40px #0dcaf0, 0 0 50px #0dcaf0, 0 0 60px #0dcaf0, 0 0 70px #0dcaf0;
+    transition: all 0.3s ease-in-out;
+}
+
 .footer {
     border-top: 2px solid #0dcaf0;
     position: fixed;
@@ -37,7 +54,7 @@ header {
 }
 
 .member {
-    padding: 20px 0;
+    padding: 50px 0;
     border-bottom: 1px solid #333;
 }
 
@@ -63,4 +80,40 @@ header {
 
 .member img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .member h4, .member p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .member {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .member h4, .member p {
+        text-align: center;
+    }
+
+    h4{
+        text-align: center;
+    }
 }

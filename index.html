@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/img/CyberNeon_Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -31,8 +33,8 @@
     <!-- メインセクション -->
     <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center text-white">
         <div class="container">
-            <h1 class="display-4">Welcome to Cyber Neon!</h1>
-            <p class="lead">未来のエンターテインメントを提供します</p>
+            <h1 class="display-4 neon-text">Welcome to Cyber Neon!</h1>
+            <p class="lead underline-animation">未来のエンターテインメントを提供します</p>
         </div>
     </header>
 
@@ -41,7 +43,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>事務所紹介</h2>
+                    <h2 class="underline-animation">事務所紹介</h2>
                     <p>
                         サイバー・ネオンは、最先端のテクノロジーとクリエイティブな才能を融合させ、観客に驚きと感動を与えます。
                         未来のエンターテイメントの中心地として、新しい才能を発掘し、サポートしています。
@@ -57,39 +59,50 @@
     <!-- メンバーセクション -->
     <section id="members" class="py-5 bg-dark text-white">
         <div class="container">
-            <h2 class="text-center">Member Introduction</h2>
+            <h2 class="text-center underline-animation">Member Introduction</h2>
             <div class="member-scroll">
                 <div class="member">
-                    <img src="./assets/img/character1.jpeg" class="img-fluid rounded-circle" alt="メンバー1">
+                    <a href="./member.html#member1"><img src="./assets/img/character1.jpeg" class="img-fluid rounded-circle" alt="メンバー1"></a>
                     <h4>Neon Starlight</h4>
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character2.jpeg" class="img-fluid rounded-circle" alt="メンバー2">
+                   <a href="./member.html#member2"> <img src="./assets/img/character2.jpeg" class="img-fluid rounded-circle" alt="メンバー2"></a>
                     <h4>Cyberia Nova</h4>
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character3.jpeg" class="img-fluid rounded-circle" alt="メンバー3">
+                    <a href="./member.html#member3"><img src="./assets/img/character3.jpeg" class="img-fluid rounded-circle" alt="メンバー3"></a>
                     <h4>Techno Echo</h4>
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character4.jpeg" class="img-fluid rounded-circle" alt="メンバー4">
+                    <a href="./member.html#member4"><img src="./assets/img/character4.jpeg" class="img-fluid rounded-circle" alt="メンバー4"></a>
                     <h4>Zero Reflection</h4>
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character5.jpeg" class="img-fluid rounded-circle" alt="メンバー5">
+                    <a href="./member.html#member5"><img src="./assets/img/character5.jpeg" class="img-fluid rounded-circle" alt="メンバー5"></a>
                     <h4>Luna Hacker</h4>
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character6.jpeg" class="img-fluid rounded-circle" alt="メンバー6">
+                    <a href="./member.html#member6"><img src="./assets/img/character6.jpeg" class="img-fluid rounded-circle" alt="メンバー6"></a>
                     <h4>Spark Fiction</h4> 
                 </div>
                 <div class="member">
-                    <img src="./assets/img/character7.jpeg" class="img-fluid rounded-circle" alt="メンバー7">
+                    <a href="./member.html#member7"><img src="./assets/img/character7.jpeg" class="img-fluid rounded-circle" alt="メンバー7"></a>
+                    <h4>Shade Orbit</h4> 
+                </div>
+                <div class="member">
+                    <a href="./member.html#member8"><img src="./assets/img/character8.jpeg" class="img-fluid rounded-circle" alt="メンバー8"></a>
+                    <h4>Artemis Glitch</h4> 
+                </div>
+                <div class="member">
+                    <a href="./member.html#member9"><img src="./assets/img/character9.jpeg" class="img-fluid rounded-circle" alt="メンバー9"></a>
+                    <h4>Ray Void</h4>
+                </div>
+                <div class="member">
+                    <a href="./member.html#member10"><img src="./assets/img/character10.jpeg" class="img-fluid rounded-circle" alt="メンバー10"></a>
                     <h4>Violet Flare</h4> 
                 </div>
                 <!-- 他のメンバー情報も同様に追加 -->
             </div>
-            <a href="./member.html" class="btn btn-primary" id="member">Member Profile</a>
         </div>
     </section>
     
@@ -97,21 +110,25 @@
     <!-- お問い合わせセクション -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center">Contact Form</h2>
-            <form>
+            <h2 class="text-center underline-animation">Contact Form</h2>
+            <form action="https://formspree.io/f/xovavgaa" method="post">
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="name">名前</label>
-                        <input type="text" class="form-control" id="name" placeholder="名前を入力">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="名前を入力" required>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" class="form-control" id="email" placeholder="メールアドレスを入力">
+                        <label for="email">E-mail:</label>
+                        <input type="email" class="form-control" id="email" placeholder="メールアドレスを入力" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="subject">Subject:</label>
+                        <input type="text" class="form-control" id="subject" placeholder="件名を入力" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="message">メッセージ</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="メッセージを入力"></textarea>
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="メッセージを入力" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">送信</button>
             </form>

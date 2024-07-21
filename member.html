@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberNeon メンバー紹介</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">  
+    <link rel="icon" href="./assets/img/CyberNeon_Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/member.css">
 </head>
@@ -17,9 +21,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="./index.html">TOP</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="#members">MEMBER</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#about">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#contact">CONTACT</a></li>
             </ul>
         </div>
     </nav>
@@ -27,7 +31,7 @@
     <!-- メインセクション -->
     <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center text-white">
         <div class="container">
-            <h1 class="display-4">CyberNeon メンバー紹介</h1>
+            <h1 class="display-4">CyberNeon Member Introduction</h1>
             <p class="lead">未来のスターたちを紹介します</p>
         </div>
     </header>
@@ -36,93 +40,97 @@
     <section id="members" class="py-5 bg-dark text-white">
         <div class="container">
             <h2 class="text-center">Member</h2>
-            <div class="row member">
+            <div class="row member" id="member1">
                 <div class="col-md-3">
                     <img src="./assets/img/character1.jpeg" class="img-fluid rounded-circle" alt="ネオン・スターライト">
                 </div>
                 <div class="col-md-9">
-                    <h4>ネオン・スターライト</h4>
-                    <p>未来を照らす光のVTuber</p>
+                    <h4 class="neon-text">ネオン・スターライト</h4>
+                    <p>
+                        未来を照らす輝きのVTuber、ネオン・スターライト。明るく元気な性格で、視聴者に元気と笑顔を届けることが得意。
+                        サイバーな衣装がトレードマークで、その光り輝く姿は夜の都市を照らす星のよう。好きなことはダンスと歌、そしてファンとの交流。
+                        夢は大きなライブイベントを開き、世界中の人々に自分のパフォーマンスを届けること。これからも、ネオンの光を頼りに、みんなの心に明るい未来を描いていく。
+                    </p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member2">
                 <div class="col-md-3">
                     <img src="./assets/img/character2.jpeg" class="img-fluid rounded-circle" alt="サイバリア・ノヴァ">
                 </div>
                 <div class="col-md-9">
-                    <h4>サイバリア・ノヴァ</h4>
+                    <h4 class="neon-text">サイバリア・ノヴァ</h4>
                     <p>デジタルの新星</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member3">
                 <div class="col-md-3">
-                    <img src="member3.jpg" class="img-fluid rounded-circle" alt="テクノ・エコー">
+                    <img src="./assets/img/character3.jpeg" class="img-fluid rounded-circle" alt="テクノ・エコー">
                 </div>
                 <div class="col-md-9">
-                    <h4>テクノ・エコー</h4>
+                    <h4 class="neon-text">テクノ・エコー</h4>
                     <p>サウンドと未来を繋ぐVTuber</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member4">
                 <div class="col-md-3">
-                    <img src="member4.jpg" class="img-fluid rounded-circle" alt="ゼロ・リフレクション">
+                    <img src="./assets/img/character4.jpeg" class="img-fluid rounded-circle" alt="ゼロ・リフレクション">
                 </div>
                 <div class="col-md-9">
-                    <h4>ゼロ・リフレクション</h4>
+                    <h4 class="neon-text">ゼロ・リフレクション</h4>
                     <p>ミステリアスな仮想の存在</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member5">
                 <div class="col-md-3">
-                    <img src="member5.jpg" class="img-fluid rounded-circle" alt="ルナ・ハッカー">
+                    <img src="./assets/img/character5.jpeg" class="img-fluid rounded-circle" alt="ルナ・ハッカー">
                 </div>
                 <div class="col-md-9">
-                    <h4>ルナ・ハッカー</h4>
+                    <h4 class="neon-text">ルナ・ハッカー</h4>
                     <p>月夜に輝くハッカー</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member6">
                 <div class="col-md-3">
-                    <img src="member6.jpg" class="img-fluid rounded-circle" alt="スパーク・フィクション">
+                    <img src="./assets/img/character6.jpeg" class="img-fluid rounded-circle" alt="スパーク・フィクション">
                 </div>
                 <div class="col-md-9">
-                    <h4>スパーク・フィクション</h4>
+                    <h4 class="neon-text">スパーク・フィクション</h4>
                     <p>エネルギッシュな未来の語り手</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member7">
                 <div class="col-md-3">
-                    <img src="member7.jpg" class="img-fluid rounded-circle" alt="シェード・オービット">
+                    <img src="./assets/img/character7.jpeg" class="img-fluid rounded-circle" alt="シェード・オービット">
                 </div>
                 <div class="col-md-9">
-                    <h4>シェード・オービット</h4>
+                    <h4 class="neon-text">シェード・オービット</h4>
                     <p>影の中のオービター</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member8">
                 <div class="col-md-3">
-                    <img src="member8.jpg" class="img-fluid rounded-circle" alt="アルテミス・グリッチ">
+                    <img src="./assets/img/character8.jpeg" class="img-fluid rounded-circle" alt="アルテミス・グリッチ">
                 </div>
                 <div class="col-md-9">
-                    <h4>アルテミス・グリッチ</h4>
+                    <h4 class="neon-text">アルテミス・グリッチ</h4>
                     <p>未来の神秘</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member9">
                 <div class="col-md-3">
-                    <img src="member9.jpg" class="img-fluid rounded-circle" alt="レイ・ヴォイド">
+                    <img src="./assets/img/character9.jpeg" class="img-fluid rounded-circle" alt="レイ・ヴォイド">
                 </div>
                 <div class="col-md-9">
-                    <h4>レイ・ヴォイド</h4>
+                    <h4 class="neon-text">レイ・ヴォイド</h4>
                     <p>空間を超えるVTuber</p>
                 </div>
             </div>
-            <div class="row member">
+            <div class="row member" id="member10">
                 <div class="col-md-3">
-                    <img src="member10.jpg" class="img-fluid rounded-circle" alt="ヴァイオレット・フレア">
+                    <img src="./assets/img/character10.jpeg" class="img-fluid rounded-circle" alt="ヴァイオレット・フレア">
                 </div>
                 <div class="col-md-9">
-                    <h4>ヴァイオレット・フレア</h4>
+                    <h4 class="neon-text">ヴァイオレット・フレア</h4>
                     <p>紫の輝き</p>
                 </div>
             </div>
@@ -137,6 +145,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
